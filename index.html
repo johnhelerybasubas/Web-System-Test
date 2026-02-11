@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> WEBSITE TEST</title>
+
+    
+    <style>
+        body {  
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #9400D3;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> </h1>
+        <p> CSP </p>
+    </header>
+
+    <nav>
+        <a href="Home">Home</a> 
+        <a href="About">About</a> 
+        <a href="Contact">Contact</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2>About</h2>
+            <p>A web system is a software platform operating over the internet, accessed via web browsers without requiring local installation, and designed to manage data, facilitate interaction, and support business processes. It typically consists of front-end user interfaces, back-end server logic, and databases, utilizing technologies like HTML, CSS, JavaScript, and HTTP/HTTPS to provide secure, scalable, and collaborative functionality. </p>
+        </div>
+
+        <div class="card">
+            <h2>REVEAL</h2>
+            <button onclick="sayHello()">Click Me</button>
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;  JOHN HELERY BASUBAS </p>
+    </footer>
+
+   
+    <script>
+        function sayHello() {
+            document.getElementById("message").innerText = "BULAGA!";
+        }
+    </script>
+
+</body>
+</html>
